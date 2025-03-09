@@ -115,13 +115,13 @@ h1{
 }
 @font-face {
 	font-family: 'Amatic_bold'; 
-	src: url(fonts/Amatic_SC/AmaticSC-Bold.ttf); 
+	src: url(/project8march/fonts/Amatic_SC/AmaticSC-Bold.ttf); 
 }
 @font-face {
 	font-family: 'Amatic'; 
-	src: url(fonts/Amatic_SC/AmaticSC-Regular.ttf); 
+	src: url(/project8march/fonts/Amatic_SC/AmaticSC-Regular.ttf); 
 }
 @font-face {
     font-family:'SofiaSans';
-    src: url(fonts/SofiaSans/SofiaSansCondensed-VariableFont_wght.ttf);
+    src: url(/project8march/fonts/SofiaSans/SofiaSansCondensed-VariableFont_wght.ttf);
 }
