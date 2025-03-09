@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'SofiaSans';
+    color: #ffffff;
+}
+.background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    opacity: 60%;
+    background-repeat: repeat;
+    filter: blur(6px);
+    z-index: -1;
+  }
+header {
+    background: linear-gradient(90deg, #0e0d0d, #cdcdcd);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgb(253, 251, 251);
+    font-family: 'Amatic';
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+.header-content {
+    max-width: 800px;
+    gap: 60px;
+    align-items: center;
+    margin-left: 10px;
+}
+h1{
+    font-style: italic;
+}
+.header-title {
+    font-family: 'Amatic_bold';
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.crown{
+    position: absolute;
+    bottom: 570px;
+    right: 15px;
+    z-index: 10;
+}
+.maincard{
+    border-radius: 10px;
+    position: relative;
+    top: 270px;
+    background-color: rgb(112,111,111);
+    width: 22%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.7s ease;
+}
+.maincard:hover{
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.maincard img{
+    width: 100%;
+    border-radius: 10px;
+}
+.maincard h1{
+    padding: 10px;
+}
+.maincard p {
+    font-size: 24px;
+    padding: 10px;
+}
+.card-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+}
+.gridcards{
+    background-color: rgb(112,111,111);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.7s ease;
+    font-size: 24px;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    height: min-content;
+}
+.gridcards:hover{
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.gridcards img{
+    width:100%;
+}
+@font-face {
+	font-family: 'Amatic_bold'; 
+	src: url(/fonts/Amatic_SC/AmaticSC-Bold.ttf); 
+}
+@font-face {
+	font-family: 'Amatic'; 
+	src: url(/fonts/Amatic_SC/AmaticSC-Regular.ttf); 
+}
+@font-face {
+    font-family:'SofiaSans';
+    src: url(/fonts/SofiaSans/SofiaSansCondensed-VariableFont_wght.ttf);
+}
