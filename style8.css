@@ -257,5 +257,8 @@ footer{
     .text1 {
         font-size: 18px;
         width:60%;
+        align-self: center;
+        justify-content: center;
+        position: relative;
     }
 }
