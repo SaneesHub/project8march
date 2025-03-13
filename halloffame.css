@@ -175,4 +175,7 @@ h1{
         width: 95%;
         top: 220px;
     }
+    .header-title{
+        font-size: 32px;
+    }
 }
