@@ -150,6 +150,7 @@ h1{
     margin-top: 70px;
     font-size: 26px;
     padding: 10px;
+    margin: 0 auto;
 }
 .text1 a {
     text-decoration: none; 
@@ -257,8 +258,5 @@ footer{
     .text1 {
         font-size: 18px;
         width:60%;
-        align-self: center;
-        justify-content: center;
-        position: relative;
     }
 }

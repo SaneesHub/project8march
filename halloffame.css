@@ -54,6 +54,7 @@ h1{
     flex-direction: column;
     justify-self: center;
     align-items: center;
+    margin: 0 auto;
 }
 .maincard-container img{
     width: 100%;
