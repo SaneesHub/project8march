@@ -9,7 +9,7 @@ body{
 }
 .background {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: fixed;
     opacity: 60%;
     background-repeat: repeat;
@@ -45,38 +45,40 @@ h1{
     margin-bottom: 10px;
     align-self: center;
 }
-.crown{
-    position: absolute;
-    bottom: 570px;
-    right: 15px;
-    z-index: 10;
+.maincard-container{
+    transition: transform 0.4s ease, box-shadow 0.7s ease;
+    position: relative;
+    top: 100px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.maincard-container img{
+    width: 100%;
 }
 .maincard{
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: relative;
-    top: 270px;
     background-color: rgb(112,111,111);
-    width: 22%;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.7s ease;
 }
 .maincard:hover{
-    transform: translateY(-10px) scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.maincard img{
-    width: 100%;
-    border-radius: 10px;
+.maincard-container:hover{
+    transform: translateY(-10px) scale(1.05); 
 }
-.maincard h1{
+.maincard h2{
     padding: 10px;
 }
-.maincard p {
+.maincard p{
     font-size: 24px;
     padding: 10px;
 }
@@ -88,7 +90,7 @@ h1{
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
-    top: 400px;
+    top: 200px;
 }
 .gridcards{
     background-color: rgb(112,111,111);
@@ -115,13 +117,62 @@ h1{
 }
 @font-face {
 	font-family: 'Amatic_bold'; 
-	src: url(/project8march/fonts/Amatic_SC/AmaticSC-Bold.ttf); 
+	src: url(/fonts/Amatic_SC/AmaticSC-Bold.ttf); 
 }
 @font-face {
 	font-family: 'Amatic'; 
-	src: url(/project8march/fonts/Amatic_SC/AmaticSC-Regular.ttf); 
+	src: url(/fonts/Amatic_SC/AmaticSC-Regular.ttf); 
 }
 @font-face {
     font-family:'SofiaSans';
-    src: url(/project8march/fonts/SofiaSans/SofiaSansCondensed-VariableFont_wght.ttf);
+    src: url(/fonts/SofiaSans/SofiaSansCondensed-VariableFont_wght.ttf);
+}
+@media (max-width: 1200px) {
+    .card-container {
+        grid-gap: 40px;
+    }
+}
+@media (max-width:1000px){
+    .maincard-container{
+        width: 40%;
+    }
+}
+@media (max-width:790px) {
+    .card-container{
+        grid-gap: 20px;
+    }
+    .gridcards p{
+        font-size: 18px;
+    }
+    .gridcards h2{
+        font-size: larger;
+    }
+    .maincard h2{
+        font-size: larger;
+    }
+    .maincard p{
+        font-size: 18px;
+    }
+    .maincard-container{
+        top: 150px;
+        width: 40%;
+    }
+}
+@media (max-width:700px){
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maincard-container{
+        width: 60%;
+    }
+}
+@media (max-width:455px){
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        top: 250px;
+    }
+    .maincard-container{
+        width: 95%;
+        top: 220px;
+    }
 }
